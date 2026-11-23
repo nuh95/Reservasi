@@ -13,7 +13,7 @@
     "KODE_RAHASIA_ANDA": {
       ".read": true,
       ".write": true,
-      "$lain": { ".validate": "$lain === 'u' || $lain === 'ruangan' || $lain === 'tamu' || $lain === 'kat' || $lain === 'tipe' || $lain === 'paket' || $lain === 'rsv' || $lain === 'lock' || $lain === '_ts'" }
+      "$lain": { ".validate": "$lain === 'u' || $lain === 'ruangan' || $lain === 'tamu' || $lain === 'kat' || $lain === 'tipe' || $lain === 'paket' || $lain === 'kamar' || $lain === 'rsv' || $lain === 'lock' || $lain === '_ts'" }
     }
   }
 }
@@ -21,6 +21,8 @@
 
 5. HP pertama (Admin): buka aplikasi, login admin / admin123, menu Akun > Hubungkan server, isi URL dan kode yang sama dengan Rules.
 6. HP lain: di layar login tekan Hubungkan ke server, isi URL dan kode yang sama, lalu login dengan akun yang dibuat Admin.
+
+**Sudah memakai Rules versi lama?** Tambahkan `|| $lain === 'kamar'` pada baris `$lain` di Rules, lalu Publish. Tanpa ini, data Master Kamar dan reservasi berisi kamar ditolak server dan sinkronisasi tertahan.
 
 Aturan `$lain` menolak data di luar struktur aplikasi. Jangan menghapus `lock` (kunci slot jam) dan `_ts` (penyamaan jam antar-HP dengan jam server).
 
