@@ -10,10 +10,12 @@
   "rules": {
     ".read": false,
     ".write": false,
-    "KODE_RAHASIA_ANDA": {
+    "reservasi_2026": {
       ".read": true,
       ".write": true,
-      "$lain": { ".validate": "$lain === 'u' || $lain === 'ruangan' || $lain === 'tamu' || $lain === 'kat' || $lain === 'tipe' || $lain === 'paket' || $lain === 'kamar' || $lain === 'rsv' || $lain === 'lock' || $lain === '_ts'" }
+      "$lain": {
+        ".validate": "$lain === 'u' || $lain === 'ruangan' || $lain === 'instansi' || $lain === 'tamu' || $lain === 'kat' || $lain === 'tipe' || $lain === 'paket' || $lain === 'kamar' || $lain === 'cfg' || $lain === 'rsv' || $lain === 'lock' || $lain === '_ts'"
+      }
     }
   }
 }
