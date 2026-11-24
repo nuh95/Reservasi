@@ -13,9 +13,6 @@ Aplikasi Android (Capacitor, satu file HTML) untuk reservasi ruangan meeting tim
 - Backup dan restore data (JSON), tombol Back Android.
 - Mode online opsional (Firebase Realtime Database): banyak HP berbagi data real-time dan slot jam dikunci di server.
 
-## Login pertama
-`admin` / `admin123`. Aplikasi **memaksa mengganti sandi** ini saat pertama masuk. Sandi disimpan dengan PBKDF2.
-
 ## Membuat APK di GitHub
 1. Buat repository baru, unggah seluruh isi folder ini (termasuk folder `.github`).
 2. **Uji cepat:** tab *Actions* > *Build APK (debug)* > *Run workflow*, lalu unduh artifact `reservasi-ruangan-debug-apk`.
